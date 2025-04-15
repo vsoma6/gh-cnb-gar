@@ -16,7 +16,7 @@ public class DemoApplication {
 
     @GetMapping("/")
     String index() {
-        return "hello, world - v3.0";
+        return "hello, world - v4.0";
     }
 
 }
