@@ -10,16 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication {
 
-    @Value("${HOSTNAME}")
-    private String podName;
-
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
 
     @GetMapping("/")
     String index() {
-        return "hello, world - v1.0 - " + podName;
+        return "hello, world - v1.0";
     }
 
 }
